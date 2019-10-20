@@ -1,0 +1,189 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+(Title and Abstract) Make sure that author list is anonymized.
+ 
+\end_layout
+
+\begin_layout Standard
+Introduction or Problem statement: 
+\end_layout
+
+\begin_layout Standard
+a.
+ What is the topic or goal of your project? Why do you think it is interesting
+ or worth pursuing? Why do you think it is not trivial? 
+\end_layout
+
+\begin_layout Standard
+b.
+ What would be the novelty or contribution of your project? 
+\end_layout
+
+\begin_layout Section
+Method: Proposed approach or Methods to be developed 
+\end_layout
+
+\begin_layout Standard
+a.
+ [For the Implementation track] Explain the method (the high-level idea
+ and optionally the technical part) on your own words, and background as
+ much as needed (assuming the reader would have understood the topics covered
+ in this class).
+ A blind copy-and-paste is not allowed.
+ Discuss why and how good this method is.
+ 
+\end_layout
+
+\begin_layout Standard
+b.
+ [For the Application track] Which machine learning method is going to be
+ applied? 
+\end_layout
+
+\begin_layout Standard
+c.
+ [For the Open-Ended track] Explain the method or approach you are developing.
+ It is fine to not have a complete description.
+ 
+\end_layout
+
+\begin_layout Section
+Related work
+\end_layout
+
+\begin_layout Standard
+a.
+ Discuss related works (at least 5 references).
+ A comprehensive survey of related works (either methods or practical applicatio
+ns) would be useful.
+ It is important to elaborate on how they would be different from or related
+ to your project.
+ 
+\end_layout
+
+\begin_layout Standard
+b.
+ For example, projects in the Application track might discuss relevant works
+ on the dataset, similar analysis.
+ Projects in the Open-ended track should discuss relevant prior approaches
+ and discuss how they are different from and related with your method.
+ 
+\end_layout
+
+\begin_layout Section
+(Plan of) Experiments 
+\end_layout
+
+\begin_layout Standard
+a.
+ How will you implement your work? List some software to be used or developed.
+ What software or off-the-shelf tools can be used? What are you going to
+ create on your own? 
+\end_layout
+
+\begin_layout Standard
+b.
+ Dataset to be used (real-world data or simulated).
+ You can discuss the nature of the dataset.
+ How can it be obtained publicly, or how you collect/generate the data?
+ What are the statistics of the dataset? Why is it challenging, or why would
+ it be useful/interesting to study? 
+\end_layout
+
+\begin_layout Standard
+c.
+ Evaluation.
+ How they can be evaluated? What experimental settings, dataset, evaluation
+ metrics will you use? 
+\end_layout
+
+\begin_layout Section*
+Plan of Project 
+\end_layout
+
+\begin_layout Standard
+a.
+ Anticipated division of work over team.
+ 
+\end_layout
+
+\begin_layout Standard
+b.
+ Why do you think it is accomplishable and feasible in a given timeframe?
+ Discuss briefly.
+ What challenges and difficulties would you expect? 
+\end_layout
+
+\end_body
+\end_document
