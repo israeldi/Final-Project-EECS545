@@ -1,3 +1,7 @@
+"""
+PAIRS TRADING MORE COMPLEX EXAMPLE
+"""
+
 import numpy as np
 import statsmodels.api as sm
 import pandas as pd
@@ -28,7 +32,8 @@ def initialize(context):
     context.inShort = [False] * context.num_pairs
     
     # Only do work 30 minutes before close
-    schedule_function(func=check_pair_status, date_rule=date_rules.every_day(), time_rule=time_rules.market_close(minutes=30))
+    schedule_function(func=check_pair_status, date_rule=date_rules.every_day(), 
+        time_rule=time_rules.market_close(minutes=30))
     
 # Will be called on every trade event for the securities you specify. 
 def handle_data(context, data):
@@ -95,10 +100,10 @@ def check_pair_status(context, data):
                 context.inLong[i] = True
                 context.inShort[i] = False
 
-                (y_target_pct, x_target_pct) = computeHoldingsPct(y_target_shares,X_target_shares, Y[-1], X[-1])
+                (y_target_pct, x_target_pct) = computeHoldingsPct(y_target_shares, X_target_shares, Y[-1], X[-1])
                 
-                context.target_weights[stock_y] = y_target_pct * (1.0/context.num_pairs)
-                context.target_weights[stock_x] = x_target_pct * (1.0/context.num_pairs)
+                context.target_weights[stock_y] = y_target_pct * (1.0 / context.num_pairs)
+                context.target_weights[stock_x] = x_target_pct * (1.0 / context.num_pairs)
                 
                 record(Y_pct=y_target_pct, X_pct=x_target_pct)
                 allocate(context, data)

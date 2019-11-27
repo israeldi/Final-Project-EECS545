@@ -1,4 +1,6 @@
 """
+BASIC PAIRS TRADING EXAMPLE
+
 This is a basic pairs trading algorithm that uses the Optimize API.
 WARNING: THIS IS A LEARNING EXAMPLE ONLY. DO NOT TRY TO TRADE SOMETHING THIS SIMPLE.
 https://www.quantopian.com/workshops
@@ -16,8 +18,11 @@ MAX_GROSS_EXPOSURE = 1.0 # Set exposure constraint constant value for optimizer
 def initialize(context):
     """
     Called once at the start of the algorithm.
+
+    context: an empty dictionary used throughout our code
     """
-    schedule_function(check_pair_status, date_rules.every_day(), time_rules.market_close(minutes=60))
+    schedule_function(check_pair_status, date_rules.every_day(), 
+        time_rules.market_close(minutes=60))
     
     context.stock1 = symbol('ABGB')
     context.stock2 = symbol('FSLR')
@@ -66,7 +71,7 @@ def check_pair_status(context, data):
     
     # Compute z-score
     if long_std > 0:
-        zscore = (short_ma - long_ma)/long_std
+        zscore = (short_ma - long_ma) / long_std
     
         # Our two entry cases
         if zscore > context.entry_threshold and \
@@ -89,6 +94,8 @@ def check_pair_status(context, data):
             context.target_weights[s2] = 0 # close out
             context.currently_short_the_spread = False
             context.currently_long_the_spread = False
+        
+        # Generates a chart for all recorded series.
         record('zscore', zscore)
     
     # Call the optimizer

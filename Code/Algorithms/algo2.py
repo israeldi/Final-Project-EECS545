@@ -1,3 +1,7 @@
+"""
+EWA/EWC Pair Trade with Kalman Filter
+"""
+
 import numpy as np
 import pytz
 
