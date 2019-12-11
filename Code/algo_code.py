@@ -36,6 +36,9 @@ OR_SIGNAL = False # Classification: x_signal or/and y_signal
 NUM_SHARES = 1 # Number of shares of stock Y to be bought and hedged
 
 def initialize(context): # -----------------------------------------------------
+    # Code developed from:
+    # https://www.quantopian.com/lectures/example-pairs-trading-algorithm
+    
     # Quantopian backtester specific variables
     set_slippage(slippage.FixedSlippage(spread=0))
     set_commission(commission.PerShare(cost=0.001, min_trade_cost=1))
@@ -362,6 +365,8 @@ def make_pipeline(): # ---------------------------------------------------------
     
     
 def get_stock_pairs(context, data): # ------------------------------------------
+    # Code developed from:
+    # https://www.quantopian.com/posts/pairs-trading-with-machine-learning
     N_PRIN_COMPONENTS = 50
     sector_map = {
     101: "Basic_Materials",
